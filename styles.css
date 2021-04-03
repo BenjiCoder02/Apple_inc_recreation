@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/*Navbar*/
+.container {
+  grid-area: nav;
+  background-color: rgb(41, 40, 40);
+  height: 45px;
+  width: 100vw;
+}
+
+.navbar-elements {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-elements li {
+  list-style: none;
+  margin: 15px;
+}
+
+.navbar-elements li a {
+  color: rgb(179, 176, 176);
+  text-decoration: none;
+}
+
+.navbar-elements li a:hover {
+  color: rgb(255, 253, 253);
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+/*Grid content*/
+.grid1 {
+  border-top: 10px solid white;
+  background-color: black;
+  max-height: 80vh;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "G11 h3";
+}
+
+.grid1 img {
+  margin-top: 10vh;
+  max-height: 50vh;
+  margin-left: 20vw;
+  grid-area: "G11";
+}
+
+.grid1 .iPhone12 {
+  grid-area: h3;
+  color: white;
+  margin-top: 25vh;
+  margin-left: 5vw;
+}
+
+.learn-more {
+  margin: 30px 0px 0px 0px;
+}
+
+.learn-more a {
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+
+.learn-more a:hover {
+  color: rgb(7, 115, 216);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-wrapper ul li {
+  margin-left: 3vw;
+  list-style: none;
+  font-size: 12px;
+  color: rgb(179, 178, 178);
+}
+
+.footer-wrapper ul li h3 {
+  margin-bottom: 5px;
+  color: rgb(138, 138, 138);
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100vw;
+  background-color: rgb(209, 205, 205);
+}
+
+h6 {
+  margin: 5px;
+  color: grey;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Privacy {
+  margin-left: 20px;
+}
+.Privacy ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.Privacy ul li {
+  list-style: none;
+}
+
+.Privacy ul li a {
+  color: rgb(122, 121, 121);
+  text-decoration: none;
+  font-size: 13px;
+  margin-top: 10px;
+}
