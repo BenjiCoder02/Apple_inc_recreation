@@ -1,13 +1,28 @@
 * {
   margin: 0;
   padding: 0;
-  max-width: 100vw;
   box-sizing: border-box;
   font-family: sans-serif;
+  max-width: 100vw;
 }
-/*Navbar*/
+
 .container {
-  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .logo {
+  font-size: 20px;
+  margin: 9px 4vw 9px 4vw;
+  color: rgb(179, 176, 176);
+}
+
+.container .logo:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav {
   background-color: rgb(41, 40, 40);
   height: 45px;
   width: 100vw;
@@ -23,12 +38,13 @@
 
 .navbar-elements li {
   list-style: none;
-  margin: 15px;
+  margin: 9px 4vw 9px 4vw;
 }
 
-.navbar-elements > li > a {
+.navbar-elements li a {
   color: rgb(179, 176, 176);
   text-decoration: none;
+  font-size: 20px;
 }
 
 .navbar-elements li a:hover {
@@ -37,7 +53,15 @@
   transition: 0.3s ease-in-out;
 }
 
-/*Grid content*/
+.toggle {
+  border: none;
+  background-color: rgb(41, 40, 40);
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: -1000px;
+}
+
 .grid1 {
   border-top: 10px solid white;
   background-color: black;
@@ -63,7 +87,7 @@
   margin-top: 25vh;
   margin-left: auto;
   margin-right: 10vw;
-  font-size: 2vh;
+  font-size: 17px;
 }
 
 .grid1 .macbook {
@@ -105,6 +129,7 @@
 .footer-wrapper ul li h3 {
   margin-bottom: 5px;
   color: rgb(138, 138, 138);
+  font-size: 15px;
 }
 
 .footer-wrapper ul li a {
@@ -125,6 +150,7 @@ hr {
 }
 
 h6 {
+  font-size: 10px;
   margin: 5px;
   color: grey;
   margin-bottom: 20px;
@@ -152,7 +178,6 @@ h6 {
   margin-top: 10px;
 }
 
-/*Grid 11*/
 .grid {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
@@ -195,6 +220,10 @@ h6 {
   max-width: 40vw;
 }
 
+.watch-logo {
+  font-size: 35px;
+}
+
 .a12 .link2 {
   color: white;
   text-decoration: none;
@@ -202,4 +231,59 @@ h6 {
 
 .a12 .link2:hover {
   color: rgb(7, 115, 216);
+}
+
+@media screen and (max-width: 890px) {
+  .container .logo {
+    display: flex;
+    margin: auto;
+    font-size: 18px;
+  }
+
+  .navbar-elements {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100vw;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    min-height: 50vh;
+    z-index: -1;
+  }
+  /*
+  .navbar-elements.active {
+    background-color: rgb(41, 40, 40);
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.6rem;
+  }
+  */
+
+  .navbar-elements li {
+    width: 100%;
+  }
+
+  .navbar-elements li a {
+    text-align: center;
+    width: 100%;
+    display: table;
+    padding: 30px;
+    cursor: pointer;
+  }
+
+  .toggle {
+    top: 9px;
+    right: 30px;
+    font-size: 20px;
+    color: rgb(179, 176, 176);
+  }
+  .toggle:hover {
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
 }
