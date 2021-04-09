@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Apple</title>
+    <link rel="icon" href="https://w7.pngwing.com/pngs/664/673/png-transparent-apple-logo-iphone-computer-apple-logo-company-heart-logo-thumbnail.png" type="image/png">
 </head>
+
 <body>
     <div class="nav">
         <div class="container">
-            <ul class="navbar-elements">
-                <li><a href="#">Home</a></li>
+            <a class="logo" href="#"><i class="fab fa-apple"></i></a>
+            <ul id="navbar-elements" class="navbar-elements">
+                
                 <li><a href="#">Mac</a></li>
                 <li><a href="#">iPad</a></li>
                 <li><a href="#">iPhone</a></li>
@@ -19,15 +24,20 @@
                 <li><a href="#">TV</a></li>
                 <li><a href="#">Music</a></li>
                 <li><a href="#">Support</a></li>
-
             </ul>
+            <div class="mobile-nav">
+                <button type="button" class="toggle" id="toggle" onclick="dropdown()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
         </div>
     </div>
     <div class="grid1">
         <img src='iphone1.png' alt="iPhone" />
         <div class="iPhone12">
-        <h1>iPhone 12</h1>
-        <h4>Starting at $40 per month</h4>
+        <h2>iPhone 12</h2>
+        <h5>Starting at $40 per month</h5>
         <div class="learn-more">
             <a href="#">Learn More</a>
             <a href="#">Buy</a>
@@ -38,8 +48,8 @@
     <div class="grid1">
         <img src='macbook.png' alt="iPhone" />
         <div class="macbook">
-        <h1>Macbook Pro 13"</h1>
-        <h4>Starting at $4000</h4>
+        <h2>Macbook Pro 13"</h2>
+        <h5>Starting at $4000</h5>
         <div class="learn-more">
             <a href="#">Learn More</a>
             <a href="#">Buy</a>
@@ -51,8 +61,8 @@
 
     <div class="a11">
         <div class="grid11">
-            <h1>iPad Air</h1>
-            <h4>Powerful. Colourful. Wonderful</h4>
+            <h2>iPad Air</h2>
+            <h5>Powerful. Colourful. Wonderful</h5>
             <div class="learn-more">
                 <a class="link1" href="#">Learn More</a>
                 <a class="link1" href="#">Buy </a>
@@ -64,7 +74,7 @@
 
     <div class="a11 a12">
         <div class="grid11">
-            <h1><i class="fa fa-apple" aria-hidden="true"></i>Watch</h1>
+            <h2><span class="watch-logo"><i class="fab fa-apple" aria-hidden="true"></i></span> <span> Watch</span></h2>
             <h5 style="color: rgb(204, 35, 6)">SERIES 6</h5>
             <h4>The future of health is on your wrist.</h4>
             <div class="learn-more">
