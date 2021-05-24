@@ -6,11 +6,13 @@
         x.style.top = "45px";
         x.style.opacity = "1";
         x.style.transition = "all 0.5s ease-in-out"
+        x.style.zIndex = "-10"
         count += 1;
         if (count % 2 == 0) {
             x.style.top = "-500px";
-            x.style.opacity = "1";
-            x.style.transition = "all 0.5s ease-in-out"
+            x.style.opacity = "0.2";
+            x.style.transition = "all 0.5s ease-in-out";
+            x.style.zIndex = "-10";
         }
     
    
