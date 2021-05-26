@@ -1,19 +1,34 @@
-
-    let x = document.getElementById("navbar-elements");
+    let bar = document.querySelector(".fa-bars");
+    let x = document.querySelector("#navbar-elements");
     let button = document.getElementById("toggle"), count = 0;
     button.onclick = 
     function dropdown() {
-        x.style.top = "45px";
-        x.style.opacity = "1";
-        x.style.transition = "all 0.5s ease-in-out"
-        x.style.zIndex = "-10"
+        bar.style.transition = "all 0.8s ease"
+        bar.style.transform = "rotate(90deg)"
+        bar.className = "fas fa-times";
+        x.classList.toggle("navbar-elements-show")
+       
+        
+       
+     
+        
+    
+        
         count += 1;
         if (count % 2 == 0) {
-            x.style.top = "-500px";
-            x.style.opacity = "0.2";
-            x.style.transition = "all 0.5s ease-in-out";
-            x.style.zIndex = "-10";
+            bar.style.transition = "all 0.8s ease"
+            bar.style.transform = "rotate(-180deg)";
+            bar.className = "fas fa-bars";
+           
+          
+          
+
+      
+            
+          
+            
         }
     
    
 }
+console.log(count)

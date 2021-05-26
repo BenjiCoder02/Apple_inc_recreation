@@ -22,12 +22,12 @@
 
 .nav {
   background-color: rgb(41, 40, 40);
-
   height: 45px;
   width: 100vw;
   overflow: hidden;
   position: fixed;
   top: 0;
+  position: fixed;
   z-index: 100;
 }
 
@@ -41,13 +41,13 @@
   margin: 9px 4vw 9px 4vw;
 }
 
-.navbar-elements li a {
+#navbar-elements li a {
   color: rgb(179, 176, 176);
   text-decoration: none;
   font-size: 18px;
 }
 
-.navbar-elements li a:hover {
+#navbar-elements li a:hover {
   color: rgb(255, 253, 253);
   text-decoration: none;
   transition: 0.3s ease-in-out;
@@ -216,30 +216,57 @@ h6 {
 /* Small screens */
 
 @media screen and (max-width: 950px) {
+  .nav {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgb(41, 40, 40);
+  }
   .container .logo {
     display: flex;
     margin: auto;
     font-size: 18px;
   }
 
-  #navbar-elements {
+  .navbar-elements {
     display: grid;
     grid-template-columns: auto;
-    margin: 0;
+    align-items: center;
+    margin-top: auto;
+
+    margin: auto;
     width: 100vw;
     position: fixed;
+    z-index: -1000;
     top: -500px;
-    opacity: 0;
-    transition: all 0.5s ease;
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
     min-height: 50vh;
-    z-index: 1;
+
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+  }
+
+  .navbar-elements-show {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    margin-top: 10px;
+    margin: auto;
+    width: 100vw;
+    position: fixed;
+    top: 40px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    min-height: 100vh;
+    z-index: -111;
     background-color: rgb(0, 0, 0);
   }
 
   #navbar-elements li {
-    border-bottom: 1px solid rgb(158, 157, 157);
     text-align: center;
-    width: 100vw;
+
+    margin: auto;
   }
 
   #navbar-elements li a {
@@ -325,7 +352,11 @@ h6 {
 
   .products2 .pp {
     height: 30vh;
-    margin: 30% auto 40% auto;
+    margin: 80px auto 80px auto;
+  }
+
+  .products2 .pp h3 {
+    margin: 55px auto;
   }
 
   .products2 .pp .fa-apple {
@@ -334,18 +365,22 @@ h6 {
 
   .products2 .pp1 img {
     height: 250px;
+    width: 250px;
   }
 
   .products2 .pp2 img {
     height: 250px;
+    width: 250px;
   }
 
   .products2 .pp3 img {
     height: 250px;
+    width: 250px;
   }
 
   .products2 .pp4 img {
     height: 250px;
+    width: 250px;
   }
 }
 
