@@ -177,7 +177,7 @@
 }
 
 hr {
-  margin-top: 40px;
+  margin-top: 20%;
   margin-bottom: 20px;
   width: 100vw;
 }
@@ -421,5 +421,15 @@ h6 {
   .Privacy ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-height: 5155px) {
+  hr {
+    margin-top: 50%;
+  }
+
+  .hr-bottom {
+    margin-top: 10%;
   }
 }
