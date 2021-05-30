@@ -426,10 +426,20 @@ h6 {
 
 @media screen and (max-height: 5155px) {
   hr {
-    margin-top: 50%;
+    margin-top: 20%;
+  }
+
+  .products2 .pp{
+    margin: 200px auto 100px auto;
   }
 
   .hr-bottom {
     margin-top: 10%;
+  }
+}
+
+@media screen and (max-height: 5550px) {
+  hr {
+    margin-top: 50%;
   }
 }
