@@ -116,15 +116,15 @@
 .products2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-content: center;
+  align-items: center;
   font-size: 40px;
   text-align: center;
   background-color: rgb(255, 255, 255);
+  margin: 0% auto 5% auto;
 }
 
 .products2 .pp {
-  height: 120px;
-  margin: 10% 0 10% 0;
+  height: 300px;
 }
 
 .products2 .pp .fa-apple {
@@ -132,19 +132,19 @@
 }
 
 .products2 .pp1 img {
-  height: 200px;
+  height: 300px;
 }
 
 .products2 .pp2 img {
-  height: 200px;
+  height: 300px;
 }
 
 .products2 .pp3 img {
-  height: 200px;
+  height: 300px;
 }
 
 .products2 .pp4 img {
-  height: 200px;
+  height: 300px;
 }
 
 /*Footer */
@@ -353,17 +353,18 @@ h6 {
   .products2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
     font-size: 40px;
     text-align: center;
+    margin: 2% auto 10% auto;
   }
 
   .products2 .pp {
-    height: 30vh;
-    margin: 100px auto 100px auto;
+    height: 250px;
   }
 
   .products2 .pp h3 {
-    margin: 55px auto;
+    margin: 55px auto 20px auto;
   }
 
   .products2 .pp .fa-apple {
@@ -391,7 +392,7 @@ h6 {
   }
 
   .hr-top {
-    margin-top: 40%;
+    margin-top: 20%;
     margin-bottom: 20px;
     width: 100vw;
   }
@@ -460,5 +461,20 @@ h6 {
 @media screen and (max-height: 5550px) {
   hr {
     margin-top: 50%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .products2 .pp img {
+    height: 75%;
+    margin-bottom: 0;
+  }
+
+  .products2 .pp {
+    margin: 15% auto 1% auto;
+  }
+
+  .footer .hr-top {
+    margin: 2% auto 0 auto;
   }
 }
